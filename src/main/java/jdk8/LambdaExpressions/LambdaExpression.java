@@ -3,6 +3,10 @@ package jdk8.LambdaExpressions;
 public class LambdaExpression {
 
     public static void main(String[] args) {
+        System.out.println("All Arguments");
+        for (String arg : args) {
+            System.out.println(arg);
+        }
         // final String c = () -> singleLineLammbda();
         // The target type of this expression must be a functional interface
 
@@ -14,7 +18,7 @@ public class LambdaExpression {
 
     public static void singleLineLammbda() {
         System.out.println("singleLineLammbda");
-        final LambdaFucntionInterface l = () -> System.out.println("Hello Lambda!!");
+        final LambdaFucntionInterface l = () -> System.out.println("In Single Line Lambda!!");
 
         l.data();
     }
@@ -22,7 +26,7 @@ public class LambdaExpression {
     public static void multiLineLammbda() {
         System.out.println("multiLineLammbda");
         final LambdaFucntionInterface l = () -> {
-            System.out.println("Hello Lambda!!");
+            System.out.println("Multi Line Lambda!!");
             final int x = 10;
             System.out.println("X:" + x);
         };
