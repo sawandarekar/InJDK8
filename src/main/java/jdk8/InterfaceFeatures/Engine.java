@@ -7,4 +7,8 @@ public interface Engine {
     public default void engineName() {
         System.out.println("Parent engine");
     }
+
+    public default void engineNameData() {
+	System.out.println("Parent engine");
+    }
 }
