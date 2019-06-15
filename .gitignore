@@ -26,4 +26,5 @@ hs_err_pid*
 .project
 .settings/**
 
-Features-In.Jdk8.iml
+*.iml
+.idea/**
