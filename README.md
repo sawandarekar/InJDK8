@@ -1,18 +1,21 @@
-# InJdk8
-###### Java8 Features examples with java docs and some unit tests
+# In Jdk8
+Java8 Features examples with java docs and some unit tests
 
-Reference : [java-8-whats-new](http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html)
-
-Reference : [java-8-features-with-examples](https://www.journaldev.com/2389/java-8-features-with-examples/)
-
-https://github.com/RameshMF/java8-developer-guide
+References : 
+- [java-8-whats-new](http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html)
+- [java-8-features-with-examples](https://www.journaldev.com/2389/java-8-features-with-examples/)
+- https://github.com/RameshMF/java8-developer-guide
 
 # The largest heading
 ## The second largest heading
 ###### The smallest heading
+
 **This is bold text**
+
 *This text is italicized*
+
 ~~This was mistaken text~~
+
 In the words of Abraham Lincoln:
 
 > Pardon my French
