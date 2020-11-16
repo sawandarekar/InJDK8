@@ -10,13 +10,28 @@ public class ConcurrencyWithExecutors {
         // ExecutorService executor = Executors.newSingleThreadExecutor();
         ExecutorService executor = Executors.newFixedThreadPool(5);
 
+        Runnable runnable0 = () ->{
+            String threadName = Thread.currentThread().getName();
+            System.out.println("Hello 0:" + threadName);
+        };
+        executor.submit(runnable0);
+        executor.submit(runnable0);
+        executor.submit(runnable0);
+
+        Thread t = new Thread(runnable0);
+        t.setName("main-thread");
+        executor.submit(t);
+        executor.submit(t);
+        executor.submit(t);
+
+
         Runnable runnable1 = () -> {
             String threadName = Thread.currentThread().getName();
-            System.out.println("Hello " + threadName);
+            System.out.println("Hello 1:" + threadName);
         };
         Runnable runnable2 = () -> {
             String threadName = Thread.currentThread().getName();
-            System.out.println("Hello " + threadName);
+            System.out.println("Hello 2:" + threadName);
         };
 
         executor.submit(runnable1);
