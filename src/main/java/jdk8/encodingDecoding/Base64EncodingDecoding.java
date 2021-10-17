@@ -7,7 +7,8 @@ import org.apache.commons.codec.binary.Base64;
 import sun.misc.BASE64Encoder;
 
 /**
- * here’s a standard way to do Base64 encoding. For too long we have been relying on Apache Commons Codec (which is great anyway).
+ * here's a standard way to do Base64 encoding. For too long we have been relying on Apache Commons Codec (which is
+ * great anyway).
  * Memory-conscious coders will desperately use sun.misc.BASE64Encoder and sun.misc.BASE64Decoder just to avoid adding extra JAR files in
  * their programs, provided they are super sure of using only Sun/Oracle JDK.
  * https://www.javacodegeeks.com/2014/04/base64-in-java-8-its-not-too-late-to-join-in-the-fun.html?utm_content=buffer48d1f&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
